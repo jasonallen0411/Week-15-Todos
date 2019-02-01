@@ -1,6 +1,11 @@
-<h1 id="welcomeEmail" *ngIf="authguard.user | async">Welcome {{ (authguard.user | async)?.email }}! <button class="btn btn-danger" (click)="logout()" *ngIf="authguard.user | async">
+<h1 id="welcomeEmail" *ngIf="authguard.user | async">Welcome {{ (authguard.user | async)?.email }}! 
+  <button class="btn btn-danger" (click)="logout()" *ngIf="authguard.user | async">
     Logout
-  </button></h1>
+  </button>
+  <a routerLink="/todos">
+    <button id="todosBtn" type="button" class="btn btn-success">Todos List</button>
+  </a>
+</h1>
 
   <div class="container" *ngIf="!(authguard.user | async)">
       <div class="row" *ngIf="message">

@@ -1,7 +1,7 @@
 #tablet{
     text-align: center;
     margin: 0px auto;
-    width: 800px;
+    width: 100%;
     height: 600px;
 }
 
@@ -15,7 +15,7 @@
 
 .card-img-overlay{
     text-align: center;
-    padding: 450px;
+    padding-top: 450px;
 }
 
 .card-title{

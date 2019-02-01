@@ -16,7 +16,9 @@ export class TodoDetailsComponent implements OnInit {
   task:'',
   completed:'',
   user:'',
-  key:''
+  key:'',
+  updateText: <any>"",
+  update: <any>""
  }
  gt;
  db;
